@@ -10,14 +10,14 @@
                 <div class="row">
                   <div class="category-links">
                     <% if root[:subtitle].present? %>
-                      <div class="category-links-header text-uppercase">
+                      <div class="category-links-header">
                         <%= root[:subtitle] %>
                       </div>
                     <% end %>
                     <ul class="pl-0">
                       <% root[:items].each do |item| %>
                         <li>
-                          <%= link_to item[:title], item[:url], class: "text-uppercase main-nav-bar-category-links" %>
+                          <%= link_to item[:title], item[:url], class: "main-nav-bar-category-links" %>
                         </li>
                       <% end %>
                     </ul>
