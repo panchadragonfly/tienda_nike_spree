@@ -1,58 +1,53 @@
 default:
   navigation:
+    - title: Nuevos Lanzamientos
+      subtitle: Colecciones
+      url: /t/colecciones
+      items:
+        -  title: Tendencias
+           :url:  /t/colecciones/tendencias
     - title: Mujeres
-      subtitle: Categorías
+      subtitle: Vestimenta
       url: /t/mujeres
       items:
         - :title: Faldas
           :url: /t/mujeres/skirts
         - :title: Vestidos
           :url: /t/mujeres/dresses
-        - :title: Shirts and Blouses
-          :url: /t/mujeres/shirts-and-blouses
         - :title: Sueters
           :url: /t/mujeres/sweaters
         - :title: Poleras y Tops
           :url: /t/mujeres/tops-and-t-shirts
         - :title: Chaquetas y Abrigos
           :url: /t/mujeres/jackets-and-coats
-    - title: Men
-      subtitle: Categories
-      url: /t/men
+        - :title: Zapatillas
+          :url: /t/mujeres/calzado
+    - title: Hombres
+      subtitle: Vestimenta
+      url: /t/hombres
       items:
-        - :title: Shirts
-          :url: /t/men/shirts
-        - :title: T-shirts
-          :url: /t/men/t-shirts
-        - :title: Sweaters
-          :url: /t/men/sweaters
-        - :title: Jackets and Coats
-          :url: /t/men/jackets-and-coats
-      promo_banners:
-        - subtitle: New collection
-          title: Summer 2019
-          url: /t/new-collection/summer-2019
-          image: 'meganav/promo_banner_left-second-category.jpg'
-        - subtitle: Special Offers
-          title: Get up to 30% off
-          url: /t/special-offers/30-off
-          image: 'meganav/promo_banner_right-second-category.jpg'
-    - title: Sportswear
-      subtitle: Categories
-      url: /t/sportswear
+        - :title: Poleras
+          :url: /t/hombres/poleras-m
+        - :title: Sueters
+          :url: /t/hombres/sweaters
+        - :title: Chaquetas y Abrigos
+          :url: /t/hombres/jackets-and-coats
+        - :title: Pantalones Deportivos
+          :url: /t/hombres/pants-m     
+        - :title: zapatillas
+          :url: /t/hombres/calzado 
+    - title: Niños
+      subtitle: Vestimenta
+      url: /t/infantil
       items:
         - :title: Tops
-          :url: /t/sportswear/tops
-        - :title: Sweatshirts
-          :url: /t/sportswear/sweatshirts
-        - :title: Pants
-          :url: /t/sportswear/pants
-      promo_banners:
-        - subtitle: New collection
-          title: Summer 2019
-          url: /t/new-collection/summer-2019
-          image: 'meganav/promo_banner_left-third-category.jpg'
-        - subtitle: Special Offers
-          title: Get up to 30% off
-          url: /t/special-offers/30-off
-          image: 'meganav/promo_banner_right-third-category.jpg'
+          :url: /t/infantil/tops
+        - :title: Vestidos
+          :url: /t/infantil/dresses-g
+        - :title: Pantalones
+          :url: /t/infantil/pants-c  
+        - :title: zapatillas
+          :url: /t/infantil/calzado    
+    - title: Liquidación
+      subtitle: Destacados
+      url: /t/liquidacion
