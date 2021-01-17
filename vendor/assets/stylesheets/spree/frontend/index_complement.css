@@ -1,0 +1,41 @@
+.texto_banner_link_blanco {
+    background-color: #FFFFFF;
+    color: #020202;
+    font-size: 48px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 75px;
+    width: 100px%;
+    height: 75px;
+    border: none;
+}
+
+.texto_banner_link_blanco:hover{
+    opacity: 0.8;
+    background-color: #FFFFFF;
+    color: #020202;
+}
+
+.banner_text_main {
+    color:ivory;
+    font-weight:900;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.texto_div {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: black;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
