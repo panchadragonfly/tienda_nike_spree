@@ -1,7 +1,6 @@
 <% cache spree_nav_cache_key('footer') do %>
-  <footer id="footer" class="pt-2 mx-auto border-top footer-spree" data-turbolinks-permanent>
-    <div class="container">
-      <div class="row d-none d-xl-flex py-5 footer-spree-menu-links">
+  <footer id="footer" class="pt-2 mx-auto footer-spree" data-turbolinks-permanent>
+      <div class= "row d-xl-flex py-5 footer_secundario footer_border">
         <% if spree_navigation_data.any? %>
           <% spree_navigation_data.first(3).each do |root| %>
             <div class="col-3">
@@ -27,6 +26,7 @@
           </div>
         <% end %>
       </div>
+     <div class="container">
       <div class="row d-xl-flex justify-content-xl-around pb-xl-5">
         <div class="d-flex d-xl-block flex-xl-grow-0 col-xl-4">
           <% if current_store.meta_description %>

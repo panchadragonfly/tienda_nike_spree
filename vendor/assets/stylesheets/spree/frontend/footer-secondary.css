@@ -1,0 +1,35 @@
+.footer_secundario {
+    color: #000000;
+    background-color: #FFFFFF;
+    display: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.footer_secundario a:hover {
+    color: #000000;
+    display: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.footer_secundario a {
+    color: #4c4c4c;
+    display: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.footer_border{
+    border-style: solid none none none;
+    border-color:#FFFFFF; 
+}
