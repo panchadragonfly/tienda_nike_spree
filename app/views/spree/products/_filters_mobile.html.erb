@@ -5,7 +5,7 @@
     <div class="plp-scroll">
       <div class="container">
         <div class="plp-overlay-header">
-          <%= Spree.t('plp.filter_by') %>
+          <%= Spree.t('plp.filtrar_por') %>
           <%= inline_svg_tag 'close.svg', id: 'filter-by-overlay-hide-button' %>
         </div>
       </div>
@@ -32,7 +32,7 @@
 
         <div class="card plp-overlay-card">
           <div class="card-header <%= 'collapsed' if params[:price].blank? %> plp-overlay-card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" role="heading" aria-level="3">
-            <%= Spree.t('plp.price') %>
+            <%= Spree.t('plp.precio') %>
             <%= icon(name: 'arrow-right',
                     classes: 'spree-icon-arrow spree-icon-arrow-right mt-1 float-right arrow plp-overlay-card-header-arrow',
                     width: 16,

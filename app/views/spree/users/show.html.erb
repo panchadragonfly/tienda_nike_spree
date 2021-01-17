@@ -1,5 +1,5 @@
 <div class="container account-page">
-  <h3 class="text-uppercase spree-mb-large spree-mt-large spree-header" ><%= accurate_title %></h3>
+  <h3 class="text-uppercase spree-mb-large spree-mt-large spree-header" ><%= Spree.t(:Mi_Cuenta) %></h3>
 
   <div class="row">
     <div class="col-xs-12 col-lg-4">
@@ -13,12 +13,12 @@
 
       <div class="d-lg-inline-block account-page-user-info-item-store-credits">
         <p class="my-0 text-uppercase text-center">
-          <%= Spree.t(:store_credit_name) %>: <b class="account-page-user-info-item-store-credits-amount"><%= Spree::Money.new(@user.total_available_store_credit).to_s.gsub('.00', '') %></b>
+          <%= Spree.t(:credito_tienda) %>: <b class="account-page-user-info-item-store-credits-amount"><%= Spree::Money.new(@user.total_available_store_credit).to_s.gsub('.00', '') %></b>
         </p>
       </div>
     </div>
     <div class="col-xs-12 col-lg-8 mt-sm-5 mt-lg-0">
-      <%= link_to Spree.t(:add_new_address), spree.new_address_path, class: 'account-page-new-address-link', method: :get %>
+      <%= link_to Spree.t(:agregar_nueva_dirección), spree.new_address_path, class: 'account-page-new-address-link', method: :get %>
 
       <div class="row">
         <% @user.addresses.each_with_index do |address, index| %>
@@ -39,16 +39,16 @@
 
   <div data-hook="account_my_orders" class="account-page-orders" id="account-my-orders">
 
-    <h3 class="text-uppercase spree-mb-medium spree-mt-medium spree-header" ><%= Spree.t(:my_orders) %></h3>
+    <h3 class="text-uppercase spree-mb-medium spree-mt-medium spree-header" ><%= Spree.t(:mis_órdenes) %></h3>
     <% if @orders.present? %>
       <table>
         <thead class="active">
           <tr>
-            <th class="text-uppercase text-secondary account-page-order-number"><%= Spree::Order.human_attribute_name(:number) %></th>
-            <th class="text-uppercase text-secondary account-page-order-date"><%= Spree.t(:date) %></th>
-            <th class="text-uppercase text-secondary account-page-order-status"><%= Spree.t(:status) %></th>
-            <th class="text-uppercase text-secondary account-page-order-payment-state"><%= Spree.t(:payment_state) %></th>
-            <th class="text-uppercase text-secondary account-page-order-shipment-state"><%= Spree.t(:shipment_state) %></th>
+            <th class="text-uppercase text-secondary account-page-order-number"><%= Spree::Order.human_attribute_name(:número) %></th>
+            <th class="text-uppercase text-secondary account-page-order-date"><%= Spree.t(:fecha) %></th>
+            <th class="text-uppercase text-secondary account-page-order-status"><%= Spree.t(:estado) %></th>
+            <th class="text-uppercase text-secondary account-page-order-payment-state"><%= Spree.t(:estado_de_pago) %></th>
+            <th class="text-uppercase text-secondary account-page-order-shipment-state"><%= Spree.t(:estado_de_envío) %></th>
             <th class="text-uppercase text-secondary account-page-order-total"><%= Spree.t(:total) %></th>
           </tr>
         </thead>
@@ -69,7 +69,7 @@
         </tbody>
       </table>
     <% else %>
-      <p class="text-center"><%= Spree.t(:you_have_no_orders_yet) %></p>
+      <p class="text-center"><%= Spree.t(:no_tienes_órdenes_aún) %></p>
     <% end %>
     <br />
   </div>

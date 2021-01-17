@@ -1,7 +1,7 @@
 <% if related_products.any? %>
   <div id="related-products">
     <div class="product-details-related">
-      <p class="font-weight-bold text-center product-details-carousel-text"><%= Spree.t('pdp.you_may_also_like') %></p>
+      <p class="font-weight-bold text-center product-details-carousel-text"><%= Spree.t('pdp.quizás_también_te_guste') %></p>
       <%= render 'spree/shared/carousel_4_products', id: 'related-products-carousel', products: @related_products %>
     </div>
   </div>

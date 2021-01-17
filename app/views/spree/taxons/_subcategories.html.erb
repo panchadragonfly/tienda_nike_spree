@@ -11,13 +11,13 @@
           <% child_taxons.each_with_index.map do |subcategory, index| %>
             <%=
               link_to_unless subcategory == taxon,
-                            index.zero? ? Spree.t(:all) : subcategory.name,
+                            index.zero? ? Spree.t(:Todo) : subcategory.name,
                             spree.nested_taxons_path(subcategory, params: permitted_product_params),
                             class: "pt-4 pb-2 mb-2 #{index.zero? ? '' : 'pl-4 pt-4 pb-2'}" do
             %>
               <div class="pt-4 mb-2 <%= index.zero? ? '' : 'pl-4' %>">
                 <span class="pb-2 taxon-subcategories-selected">
-                  <%= index.zero? ? Spree.t(:all) : subcategory.name %>
+                  <%= index.zero? ? Spree.t(:Todo) : subcategory.name %>
                 </span>
               </div>
             <% end %>

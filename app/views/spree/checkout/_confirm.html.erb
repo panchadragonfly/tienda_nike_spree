@@ -5,18 +5,18 @@
   <div class='checkout-confirm-order-details d-flex flex-column flex-lg-wrap' id="order_summary" data-hook>
     <div class="checkout-confirm-order-details-line-items d-flex flex-column align-items-center w-100 order-0 order-lg-1">
       <div class="checkout-confirm-order-details-line-items-header d-none d-sm-block d-lg-none align-self-start mb-3">
-        <%= Spree.t(:products) %>
+        <%= Spree.t(:productos) %>
       </div>
       <div class="d-table w-100">
         <div class="d-none d-lg-table-row text-secondary ">
           <p class="d-table-cell pb-1">
-            <%= Spree.t(:product) %>
+            <%= Spree.t(:producto) %>
           </p>
           <p class="d-table-cell pb-1">
-            <%= Spree.t(:price) %>
+            <%= Spree.t(:precio) %>
           </p>
           <p class="d-table-cell pb-1">
-            <%= Spree.t(:quantity) %>
+            <%= Spree.t(:cantidad) %>
           </p>
           <p class="d-table-cell pb-1">
             <%= Spree.t(:total) %>
@@ -27,19 +27,19 @@
     </div>
     <div class="checkout-confirm-delivery-informations text-left mt-3 order-1 order-lg-0">
       <div class="d-lg-none checkout-confirm-delivery-informations-header">
-        <%= Spree.t(:delivery_information) %>
+        <%= Spree.t(:información_de_despacho) %>
       </div>
       <dl>
         <div>
           <dt class="text-uppercase">
-            <%= Spree.t(:shipping_address) %>
+            <%= Spree.t(:dirección) %>
             <%= checkout_edit_link %>
           </dt>
           <dd><%= sanitize @order.ship_address.to_s, tags: %w[br] %></dd>
         </div>
         <div>
           <dt class="text-uppercase">
-            <%= Spree.t(:billing_address) %>
+            <%= Spree.t(:dirección_de_envío) %>
             <%= checkout_edit_link %>
           </dt>
           <dd><%= sanitize @order.bill_address.to_s, tags: %w[br] %></dd>
@@ -55,7 +55,7 @@
         </div>
         <div>
           <dt class="text-uppercase">
-            <%= Spree.t(:payment) %>
+            <%= Spree.t(:pago) %>
             <%= checkout_edit_link('payment') %>
           </dt>
           <dd>

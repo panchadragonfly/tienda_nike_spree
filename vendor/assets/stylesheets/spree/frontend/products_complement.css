@@ -1,0 +1,17 @@
+.boton_ovalado {
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    border-radius: 75px;
+    width: 150px%;
+    height: 75px;
+    border: none;
+}
+.boton_ovalado:hover{
+    opacity: 0.8;
+}
+
+.minusculas{
+    text-transform: lowercase;
+}

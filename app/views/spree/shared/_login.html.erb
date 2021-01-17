@@ -1,5 +1,5 @@
 <div class="col-lg-11 mx-auto">
-  <h3 class="spree-mb-large spree-mt-large spree-header"><%= Spree.t(:log_in_to_continue) %></h3>
+  <h3 class="spree-mb-large spree-mt-large spree-header"><%= Spree.t(:log_in_para_continuar) %></h3>
   <%= form_for Spree.user_class.new, as: :spree_user, url: spree_login_path do |f| %>
     <div id="password-credentials" class="mb-4">
       <div class="form-group mb-4">
@@ -21,7 +21,7 @@
           <%= f.label :remember_me, '' %>
         </div>
 
-        <%= f.label :remember_me, Spree.t(:remember_me), class: 'spree-checkbox-label' %>
+        <%= f.label :remember_me, Spree.t(:recuerdame), class: 'spree-checkbox-label' %>
       </div>
     <% end %>
 
